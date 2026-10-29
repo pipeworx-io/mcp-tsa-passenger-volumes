@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tsa-passenger-volumes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "tsa-passenger-volumes — daily U.S. airport checkpoint screening counts.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tsa-passenger-volumes": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tsa-passenger-volumes"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tsa-passenger-volumes.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tsa-passenger-volumes",
   "pipeworx": {
-    "sourceHash": "v1-4e51e8236f29a9453849bc4a9f7e14545ebf1c6cad073abeb63bac1478d529c9",
-    "sourceCommit": "a03f96ed672b8c149593c64ecbf30280cabf084c"
+    "mode": "gateway",
+    "slug": "tsa-passenger-volumes",
+    "gatewaySlug": "tsa-passenger-volumes",
+    "sourceHash": "v1-e76ef02bbd972206347916989c5137c2de2e74a4aa0daa7757676dd4cd40f08e",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
