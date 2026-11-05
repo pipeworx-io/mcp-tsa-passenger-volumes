@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tsa-passenger-volumes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "tsa-passenger-volumes — daily U.S. airport checkpoint screening counts.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tsa-passenger-volumes",
     "gatewaySlug": "tsa-passenger-volumes",
-    "sourceHash": "v1-e76ef02bbd972206347916989c5137c2de2e74a4aa0daa7757676dd4cd40f08e",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-893764acf7a95e2ec7a35018d47ce67ac444b9e598f15309816b90964f744729",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
